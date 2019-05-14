@@ -60,5 +60,5 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print('Test Set Accuracy:', test_acc)
 
 predictions = model.predict(test_images)
-print('Prediction: ', np.argmax(predictions[10]))
-print('Actual: ', test_labels[10])
+print('Prediction: ', np.argmax(predictions[29]))
+print('Actual: ', test_labels[29])
