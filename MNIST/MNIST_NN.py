@@ -37,7 +37,7 @@ plt.show()
 
 # Build the NN model:
 # Model consists of input layer with 28*28 neurons (784 inputs), then another layer of 128 neurons with ReLU activation,
-# and at last an output layer with softmax units for detecting probabilities of the input from 1-10
+# and at last an output layer with softmax units for detecting probabilities of the input from 0-9
 model = keras.Sequential([
     keras.layers.Flatten(input_shape=(28, 28)),
     keras.layers.Dense(128, activation=tf.nn.relu),
