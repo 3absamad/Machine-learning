@@ -14,12 +14,12 @@ images = keras.datasets.mnist
 print('Training set size:', train_labels.shape[0])
 print('Test set size:', test_labels.shape[0])
 
-# Plot a random image from the training data-set, also view the image before scaling.
+# Plot a random image from the training data-set, also view the image before scaling/normalization.
 plt.figure()
 plt.imshow(train_images[np.random.randint(1, 59999)])
 plt.show()
 
-# Scale the images of the entire data-set
+# Scale the images of the entire data-set to normalize inputs between [0-1]
 train_images = train_images/255
 test_images = test_images/255
 
