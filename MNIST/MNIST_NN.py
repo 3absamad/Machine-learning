@@ -48,6 +48,8 @@ model = keras.Sequential([
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
+# Summary of our sequential model
+model.summary()
 
 # Train the model, using batch size of 64 through 10 epochs
 model.fit(train_images, train_labels, batch_size=64, epochs=10)
